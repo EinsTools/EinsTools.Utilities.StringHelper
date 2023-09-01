@@ -1,0 +1,16 @@
+Version 1.0.1
+    - Added ParseFileSize
+Version 1.0.0
+    - Initial version
+Version 0.0.3
+    - Added HtmlEncode and HtmlDecode
+    - Added SurroundWith
+    - Added TryParseInt, TryParseLong, TryParseBoolean and TryParseGuid
+    - Removed Insert
+    - Changed framework to netstandard2.0
+    - Added DeserializeCaseInsensitive
+    - Added Break
+    - Added ExpandTabs
+    - Added RemoveRegex(this string s, string regex, RegexOptions? options = null)
+    - Added CaseFold
+    - Added CommonPrefix, CommonSuffix, Reverse, ToStream and CollapseWhitespace

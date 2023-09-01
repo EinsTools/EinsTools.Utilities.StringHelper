@@ -1,0 +1,27 @@
+{
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 1,
+    "Main": "main",
+    "DevTag": "rc",
+    "Dev": "dev",
+    "PushBranches": [
+        "main",
+        "dev"
+    ],
+    "BuildCommand": {
+        "Command": "pwsh",
+        "Arguments": [
+            "--noprofile",
+            "--nologo",
+            "-noninteractive",
+            "-executionpolicy",
+            "unrestricted",
+            "/c",
+            "./build.ps1"
+        ]
+    },
+    "Projects": [
+        "EinsTools.Utilities.StringHelper/EinsTools.Utilities.StringHelper.csproj"
+    ]
+}

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <!-- <TargetFrameworks>net6.0;net7.0</TargetFrameworks> -->
+        <LangVersion>Latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>0.0.1</Version>
+        <Authors>EinsTools</Authors>
+        <Company>EinsTools</Company>
+        <PackageId>EinsTools.Utilities.StringHelper</PackageId>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/EinsTools/EinsTools.Utilities.StringHelper</PackageProjectUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Copyright>EinsTools</Copyright>
+        <Authors>EinsTools</Authors>
+        <PackageTags>Utilities,String,StringBuilder,StringExtension,Extension;Case Folding;CaseFold;Levenshtein distance</PackageTags>
+        <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+	    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <Description>StringHelper is a library that provides a variety of string extension methods.</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="/" />
+        <None Include="../LICENSE" Pack="true" PackagePath="" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
+      <PackageReference Include="System.Text.Json" Version="7.0.3" />
+    </ItemGroup>
+
+    <Target Name="PreparePackageReleaseNotesFromFile" BeforeTargets="GenerateNuspec">
+        <ReadLinesFromFile File="../RELEASENOTES.txt">
+            <Output TaskParameter="Lines" ItemName="ReleaseNoteLines" />
+        </ReadLinesFromFile>
+        <PropertyGroup>
+            <PackageReleaseNotes>@(ReleaseNoteLines, '%0a')</PackageReleaseNotes>
+        </PropertyGroup>
+    </Target>
+    
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EinsTools.Utilities.StringHelper", "EinsTools.Utilities.StringHelper\EinsTools.Utilities.StringHelper.csproj", "{DF28E74B-CE9C-423C-A99B-B12C3A8A11F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStringHelper", "TestStringHelper\TestStringHelper.csproj", "{F1559328-BBAB-4815-9B25-1122799EC396}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF28E74B-CE9C-423C-A99B-B12C3A8A11F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF28E74B-CE9C-423C-A99B-B12C3A8A11F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF28E74B-CE9C-423C-A99B-B12C3A8A11F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF28E74B-CE9C-423C-A99B-B12C3A8A11F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1559328-BBAB-4815-9B25-1122799EC396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1559328-BBAB-4815-9B25-1122799EC396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1559328-BBAB-4815-9B25-1122799EC396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1559328-BBAB-4815-9B25-1122799EC396}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
